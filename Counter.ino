@@ -1,20 +1,13 @@
-///////แก้แค่นี้พอ
+const int bt1 = 6; //count to x
+const int bt2 = 7; //count to y
 
-const int bt1 = 6; //ปุ่มนับ 99
-const int bt2 = 7; //ปุ่มนับอะไรก็ได้
+const int ck = 8,res = 9,res2 = 10; //PIN clock pulse, reset QB, reset QA
 
-const int ck = 8,res = 9,res2 = 10; //PIN clock pulse, reset QB, reset QA แก้ตามวงจรที่ออกแบบ
+int count2 = 39; //y
 
-int count2 = 39; //ครั้งที่นับ เช่น 00 - 99 ก็ใส่ 99 แก้ด้วยอันนี้อ่ะ กูนับ 39 แล้ว!! อย่าเหมือนไอ่สัส
+int sleep = 60; //delay of count
 
-int sleep = 60; //ดีเลย์
-
-/////// แก้แค่นี้พอ
-
-/*****************/
-// Do not touch this!!!!
-
-int count = 99;
+int count = 99; //x
 
 const int ledPin =  2;
 bool isLedOn = false;   
@@ -24,8 +17,6 @@ int previousButtonState1 = LOW;
 
 int currentButtonState2 = LOW;
 int previousButtonState2 = LOW; 
-
-/****************/
 
 
 void setup() {
